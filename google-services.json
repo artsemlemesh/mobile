@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1011628648286",
+    "firebase_url": "https://bynde-278211.firebaseio.com",
+    "project_id": "bynde-278211",
+    "storage_bucket": "bynde-278211.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011628648286:android:7dbd77db528c866a49d1cf",
+        "android_client_info": {
+          "package_name": "com.bundleup.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011628648286-ue9pf98ju9lln7h51oaoo7u1ouj274gc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTvqNOSwkRHEWbPe8Flok1BSi3QjB7s9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011628648286-ue9pf98ju9lln7h51oaoo7u1ouj274gc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1011628648286-5u4213c3o3jihj17af0mjb58rmoteni4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bundleup.ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+{
+    "build": {
+      "preview": {
+        "android": {
+          "buildType": "apk"
+        },
+        "env": {
+          "EXPO_PUBLIC_ENV": "staging"
+        }
+      },
+      "preview2": {
+        "android": {
+          "gradleCommand": ":app:assembleRelease"
+        }
+      },
+      "preview3": {
+        "developmentClient": true
+      },
+      "development": {
+        "distribution": "internal",
+        "developmentClient": true,
+        "channel": "development",
+        "ios": {
+          "simulator": true
+        }
+      },
+      "staging": {
+        "channel": "staging",
+        "env": {
+          "EXPO_PUBLIC_ENV": "staging",
+          "SENTRY_AUTH_TOKEN":"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",
+          "SENTRY_ORG":"bynde-inc",
+          "SENTRY_PROJECT":"bundleup-mobile"
+        }
+      },
+      "main": {
+        "channel": "main",
+        "env": {
+          "EXPO_PUBLIC_ENV": "production",
+          "SENTRY_AUTH_TOKEN":"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",
+          "SENTRY_ORG":"bynde-inc",
+          "SENTRY_PROJECT":"bundleup-mobile"
+        }
+      }
+    }
+  }

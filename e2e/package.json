@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "appium-doctor": "^1.16.0",
+    "wd": "^1.14.0"
+  }
+}

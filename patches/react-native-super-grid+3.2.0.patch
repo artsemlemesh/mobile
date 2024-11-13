@@ -1,0 +1,46 @@
+diff --git a/node_modules/react-native-super-grid/FlatGrid.js b/node_modules/react-native-super-grid/FlatGrid.js
+index 163d709..59d52f7 100644
+--- a/node_modules/react-native-super-grid/FlatGrid.js
++++ b/node_modules/react-native-super-grid/FlatGrid.js
+@@ -1,6 +1,6 @@
+ import React from 'react';
+ import {
+-  View, Dimensions, ViewPropTypes, FlatList,
++  View, Dimensions, FlatList,
+ } from 'react-native';
+ import PropTypes from 'prop-types';
+ import { chunkArray, calculateDimensions, generateStyles } from './utils';
+@@ -169,8 +169,8 @@ FlatGrid.propTypes = {
+   itemDimension: PropTypes.number,
+   fixed: PropTypes.bool,
+   spacing: PropTypes.number,
+-  style: ViewPropTypes.style,
+-  itemContainerStyle: ViewPropTypes.style,
++  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
++  itemContainerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+   staticDimension: PropTypes.number,
+   horizontal: PropTypes.bool,
+   onLayout: PropTypes.func,
+diff --git a/node_modules/react-native-super-grid/SectionGrid.js b/node_modules/react-native-super-grid/SectionGrid.js
+index 6babfa3..13a2fe8 100644
+--- a/node_modules/react-native-super-grid/SectionGrid.js
++++ b/node_modules/react-native-super-grid/SectionGrid.js
+@@ -1,6 +1,6 @@
+ import React, { Component } from 'react';
+ import {
+-  View, Dimensions, ViewPropTypes, SectionList
++  View, Dimensions, SectionList
+ } from 'react-native';
+ import PropTypes from 'prop-types';
+ import { generateStyles, calculateDimensions, chunkArray } from './utils';
+@@ -164,8 +164,8 @@ SectionGrid.propTypes = {
+   itemDimension: PropTypes.number,
+   fixed: PropTypes.bool,
+   spacing: PropTypes.number,
+-  style: ViewPropTypes.style,
+-  itemContainerStyle: ViewPropTypes.style,
++  style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
++  itemContainerStyle: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+   staticDimension: PropTypes.number,
+   onLayout: PropTypes.func,
+   listKey: PropTypes.string,

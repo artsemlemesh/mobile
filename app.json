@@ -1,0 +1,89 @@
+{
+  "expo": {
+    "name": "BundleUp",
+    "slug": "bundleup",
+    "scheme": "bundleup",
+    "description": "Buy and Sell Baby Clothing",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#846BE2"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/2b94abeb-c390-41d6-97c7-564ffaddc8a2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "version": "2.8.1",
+    "ios": {
+      "buildNumber": "2.8.1",
+      "runtimeVersion": "2.8.1",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bundleup.ios",
+      "infoPlist": {
+        "NSUserTrackingUsageDescription": "We use Tracking to fix bugs and improve your experience.",
+        "NSCameraUsageDescription": "Camera used for taking photos of clothing",
+        "NSPhotoLibraryUsageDescription": "Photos used for profile picture"
+      },
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "versionCode": 42,
+      "runtimeVersion": "2.8.1",
+      "package": "com.bundleup.android",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "CAMERA",
+        "READ_INTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyCw7O8ydcHBvr2psYkmYhavwCkxZ-wUiuY",
+          "authDomain": "bynde-278211.firebaseapp.com",
+          "databaseURL": "https://bynde-278211.firebaseio.com",
+          "projectId": "bynde-278211",
+          "storageBucket": "bynde-278211.appspot.com",
+          "messagingSenderId": "1011628648286",
+          "appId": "1:1011628648286:web:f96a2363865a02a649d1cf",
+          "measurementId": "G-N3LXM58RYE"
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2b94abeb-c390-41d6-97c7-564ffaddc8a2"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "./plugins/rudderstack-expo.js",
+      "expo-font",
+      "expo-tracking-transparency",
+      [
+        "@sentry/react-native/expo",
+        {
+          "organization": "bynde-inc",
+          "project": "bundleup-mobile",
+          "url": "https://sentry.io/"
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
